@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     resultThis += tvNum[i]*2;
                     break;
                 case 2:
-                    resultThis += tvNum[i]*3;
+                    resultThis += tvNum[i];
                     break;
                 case 3:
                     resultThis += tvNum[i]*4;
@@ -82,6 +82,9 @@ public class MainActivity extends AppCompatActivity {
                 case 4:
                     resultThis += tvNum[i]*5;
                     break;
+            }
+            if(repeat == 3 || repeat == 4){
+                break;
             }
             repeat = 0;
         }
