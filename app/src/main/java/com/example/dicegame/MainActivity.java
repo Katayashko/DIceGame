@@ -62,13 +62,28 @@ public class MainActivity extends AppCompatActivity {
             tvNum[i] = r.nextInt(6);
         }
 
-
+        int repeat = 0;
         for (int i = 0; i < 5; i++) {
             for (int j = i; j < 5; j++) {
                 if (tvNum[i] == tvNum[j+1]) {
-                    resultThis += tvNum[i]*2;
+                    ++repeat;
                 }
             }
+            switch (repeat){
+                case 1:
+                    resultThis += tvNum[i]*2;
+                    break;
+                case 2:
+                    resultThis += tvNum[i]*3;
+                    break;
+                case 3:
+                    resultThis += tvNum[i]*4;
+                    break;
+                case 4:
+                    resultThis += tvNum[i]*5;
+                    break;
+            }
+            repeat = 0;
         }
 
         thisResultTV.setText("Wynik tego losowania: " + resultThis);
@@ -84,6 +99,8 @@ public class MainActivity extends AppCompatActivity {
         thisResultTV.setText("Wynik tego losowania: 0");
         gameResultTV.setText("Wynik gry: 0");
         numToss.setText("Liczba rzutów: 0");
+        score = 0;
+        tossNum = 0;
     }
 
     private void updateScore(int newScore){

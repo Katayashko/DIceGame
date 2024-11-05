@@ -114,7 +114,7 @@
         android:id="@+id/thisResultTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Wynik tego losowania: "
+        android:text="Wynik tego losowania: 0"
         android:textSize="14sp"
         android:layout_gravity="center"
         />
@@ -125,7 +125,7 @@
         android:id="@+id/gameResultTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Wynik gry: "
+        android:text="Wynik gry: 0"
         android:textSize="14sp"
         android:layout_gravity="center"
         />
@@ -136,7 +136,7 @@
         android:id="@+id/numToss"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Liczba rzutów: "
+        android:text="Liczba rzutów: 0"
         android:textSize="14sp"
         android:layout_gravity="left"
         />
